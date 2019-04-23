@@ -24,6 +24,7 @@ public class floorGenerator : MonoBehaviour {
 	public void OnCollisionEnter (Collision other) {
 		if (other.gameObject.CompareTag ("Player") && floor_gene) {
 			Instantiate (floor, new_floorPos, transform.rotation);
+            PlayerController.score++;
 			floor_gene = false;
 		}
 		else
