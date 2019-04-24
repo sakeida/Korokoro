@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         highScore = PlayerPrefs.GetInt(key, 0);
+        score = 0;
     }
 
     // Update is called once per frame
